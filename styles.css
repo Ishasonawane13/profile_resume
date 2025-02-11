@@ -8,12 +8,12 @@ body {
 }
 
 body {
-    background-color: #fefae0;
+    background-color: #ffffff;
     color: #d4a373;
 }
 
 nav {
-    background-color: #faedcd;
+    background-color: #fefae0;
     display: flex;
 }
 
@@ -138,7 +138,6 @@ main {
     padding: 20px;
     font-family: sans-serif;
     color: #2f2f2f;
-    background-color: #f5ebe0;
 }
 
 p {
@@ -181,15 +180,125 @@ p li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    cursor: pointer;
+    /* Make it look clickable */
+}
+
+.skills-achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-achievements>p {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    /* Make it look clickable */
+}
+
+.skills-achievements>p .content {
+    display: none;
+    /* Hide content initially */
+    margin-top: 10px;
 }
 
 .skills-achievements>p:empty {
     display: none;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .skills-achievements {
-        flex-direction: column;
-    }
+#isha_info {
+    height: 200px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+    border-radius: 1.5rem;
+    border-width: 4px;
+    border-color: #2f2f2f;
+    font-size: 18px;
+    background-color: #fff4ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #474747;
+}
+
+.contact-details:hover {
+    filter: drop-shadow(0 0 2em #707070aa);
+}
+
+#changeTextBtn {
+    margin-top: 10px;
+    padding: 0px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #00a896;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#changeTextBtn:hover {
+    background-color: #028090;
+}
+
+#changeTextBtn1 {
+    margin-top: 10px;
+    padding: 0px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #00a896;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#changeTextBtn1:hover {
+    background-color: #028090;
+}
+
+
+/* Bottom navbar styles */
+.bottom-navbar {
+    background-color: rgba(99, 99, 99, 0.7);
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-navbar ul li {
+    display: inline;
+}
+
+.bottom-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.bottom-navbar ul li a:hover {
+    background-color: #555;
+
+    border-radius: 5px;
+}
+
+.space {
+    height: 600px;
 }
